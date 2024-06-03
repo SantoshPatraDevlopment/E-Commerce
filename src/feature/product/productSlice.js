@@ -14,6 +14,8 @@ export var fetchProduct=createAsyncThunk('product/fetchProduct',(action)=>{
 });
 
 
+
+
 export const productSlice=createSlice({
     name:'product',
     initialState:initialStateProduct,

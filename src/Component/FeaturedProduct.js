@@ -36,8 +36,9 @@ export function FeaturedProduct() {
             <span className="bg-secondary pr-3">Featured Products</span>
           </h2>
           <div className="row px-xl-5">
-           debugger;
+           {/* debugger; */}
             {productState.arrProduct.filter(e=>e.category.toUpperCase()==selectedCategory.toUpperCase()).map((e, index) => (<FeaturedSingleProduct key={index} product={e} />))}
+            console.log(productState)
             {/* <div className="col-lg-3 col-md-4 col-sm-6 pb-1">
               <div className="product-item bg-light mb-4">
                 <div className="product-img position-relative overflow-hidden">

@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Category from './Category'
+import { useSelector } from 'react-redux'
 
 export function Navber() {
+    const cartArray = useSelector((state)=>state.cart.arrCart);
     return (
         <>
             {/* Navbar Start */}
@@ -141,15 +143,15 @@ export function Navber() {
                                             0
                                         </span>
                                     </a>
-                                    <a href="" className="btn px-0 ml-3">
+                                    <NavLink to="/cart" className="btn px-0 ml-3">
                                         <i className="fas fa-shopping-cart text-primary" />
                                         <span
                                             className="badge text-secondary border border-secondary rounded-circle"
                                             style={{ paddingBottom: 2 }}
                                         >
-                                            0
+                                            {cartArray.length}
                                         </span>
-                                    </a>
+                                    </NavLink>
                                 </div>
                             </div>
                         </nav>

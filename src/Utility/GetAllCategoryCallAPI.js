@@ -19,4 +19,4 @@ export async function GetAllProductCallAPI(props) {
 }
 
 
-// export default(GetAllCategoryCallAPI,GetAllProductCallAPI)
+export default(GetAllCategoryCallAPI,GetAllProductCallAPI)
